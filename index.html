@@ -1,92 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR-Management System</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Favicov -->
-    <link rel="icon" type="image/x-icon" href="images/favicon (2).ico">
-
-</head>
-<body style="background-image: url('images/pexels-pixabay-268415.jpg');">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            
-                <img src="images/Hrlogo-removebg-preview.png" alt="" width="150" height="50" class="d-inline-block align-text-top">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              
-
-            <li class="nav-item">
-                <a class="nav-link" href="accounting.html">Accountant</a>
-              </li>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Contact us</a>
-              </li>
-            </li>
-            
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Join Us
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Login</a></li>
-                  <li><a class="dropdown-item" href="#">Register</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                </ul>
-              
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HR-Management System</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
+      <!-- Favicov -->
+      <link rel="icon" type="image/x-icon" href="images/favicon (2).ico">
+      <script type="text/javascript"> </script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="images/Hrlogo-removebg-preview.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Accounting</a>accounting.html</li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Join Us</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+  <header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center my-5">
+                    <h1 class="display-5 fw-bolder text-white mb-2">Present your business in a whole new way</h1>
+                    <p class="lead text-white-50 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit!</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
-      <!-- NavbarEnd -->
-
-
-<!-- Footer -->
-
-
-<footer class="text-center text-lg-start" style="  position: fixed; width: 100%;  padding: 5px 20px 0px 5px; bottom: 0; ">
-    <div class="container d-flex justify-content-center py-5">
-      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-          <a href="#" class="fa fa-facebook"></a>
-      </button>
-      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-          <a href="#" class="fa fa-linkedin"></a>
-      </button>
-      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-          <a href="#" class="fa fa-instagram"></a>
-      </button>
-      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-          <a href="#" class="fa fa-twitter"></a>
-      </button>
     </div>
-
-    <!-- Copyright -->
-    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.3);">
-      © 2022 Copyright:
-      <a class="text-white" href="https://www.linkedin.com/in/hamzeh-fakhreddin-947317212/">Hamzeh fakhreddin</a>
+</header>
+  <!-- form section -->
+  <div class="container">] <div class=" text-center mt-5 ">
+      <h1>HR-Management System</h1>
     </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- FooterEnd -->
+    <div class="row ">
+      <div class="col-lg-7 mx-auto">
+        <div class="card mt-2 mx-auto p-4 bg-light">
+          <div class="card-body bg-light">
+            <div class="container">
+              <form id="contact-form" role="form">
+                <div class="controls">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group"> <label for="form_name">fullName *</label> <input id="form_name"
+                          type="text" name="name" class="form-control" placeholder="Please enter the Full name  *"
+                          required="required" data-error="Full name is required."> </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group"> <label for="form_image">Image_url *</label> <input id="form_image"
+                          type="text" name="surname" class="form-control" placeholder="Please enter the Image url *"
+                          required="required" data-error="Image url is required."> </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group"> <label for="form_need">Department*</label> <select
+                          id="form_need" name="need" class="form-control" required="required"
+                          data-error="Please choose the department.">
+                          <option value="" selected disabled>--Select Your department--</option>
+                          <option>Administration</option>
+                          <option>Marketing</option>
+                          <option>Development</option>
+                          <option>Finance</option>
+                        </select> </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group"> <label for="form_need2">Level *</label> <select
+                          id="form_need2" name="need" class="form-control" required="required"
+                          data-error="Please specify your need.">
+                          <option value="" selected disabled>--Please choose the level--</option>
+                          <option>Juniorr</option>
+                          <option>Mid-Senior</option>
+                          <option>Senior</option>
+                        </select> </div>
+                    </div>
+                  
+                    </div>
+                    <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " 
+                        value="submit" id = btnSub  > </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div> <!-- /.8 -->
+      </div> <!-- /.row-->
+    </div>
+  </div>
+  <!-- formSectionEnd -->
+  <!-- card -->
+  <section >
+    <div class="container" style="margin-top:50px;" id = fCard>
+      <div class="row">
+          <div class="col-md-3">
+              <div class="card-sl">
+                  <div class="card-image">
+                      <img
+                          src="images/black1.jpg" />
+                  </div>
+  
+                  <a class="card-action" href="#"></a>
+                  <div class="card-heading" id = cardSection >
+                    Full name :    
+                  </div>
+                  <div class="card-text" >
+                      Employee department:
+                  </div>
+                  <div class="card-text">
+                      Level
+                  </div>
+                  <a href="#" class="card-button"> Employee id</a>
+              </div>
+          </div>
+      </div>  
+  </section>
+  
+<!-- cardEnd -->
+  <footer class="py-5 bg-dark">
+    <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Hamzeh fakhreddin 2022</p></div>
+</footer>
 
-  <script src="app.js"></script>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="app.js">js</script>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
+
+</html>
+    </body>
 </html>
