@@ -1,8 +1,9 @@
-
 "use strict";
 let employeeInfo = [];
-let formEl = document.getElementById ("contact-form");
-let sectionEl = document.getElementById("cardSection");
+let cardSection = document.getElementById("cards-section");
+let formEl = document.getElementById ("contact-form"); 
+
+// Employee main function
 
 function Employee(employeeID,fullName,department,level,imageURL,salary){
     this.employeeID=employeeID;
@@ -11,23 +12,47 @@ function Employee(employeeID,fullName,department,level,imageURL,salary){
     this.level=level;
     this.imageURL=imageURL;
     this.salary=salary;
-    employeeInfo.push(this);
+    employeeInfo.push(this); 
 }
 
 
 
-    Employee.prototype.render = function(){
-        let name = document.createElement('h3'); 
-    name.textContent = this.name; 
-    sectionEl.appendChild(name)  
-    
+// The render function
+Employee.prototype.render= function(){
+    // creat a div inside card section 
+    let cardDiv = document.createElement("div"); 
+    cardSection.appendChild(cardDiv);
+    cardDiv.classList.add("card");
+
+    // render full name 
+    let empName = document.createElement("h3"); 
+    empName.textContent = this.fullName;
+    cardDiv.appendChild(empName);
+
+     // render Department
+     let empDepartment = document.createElement("p"); 
+     empDepartment.textContent = this.department;
+     cardDiv.appendChild(empDepartment);
+
+     // render Level 
+     let empLevel = document.createElement("p"); 
+     empLevel.textContent = this.level;
+     cardDiv.appendChild(empLevel);
+
+     // render Image 
+     let empImg = document.createElement("img");
+     empImg.src = this.imageURL ;
+     cardDiv.appendChild(empImg);
+     empImg.classList.add("img1");
+
+    //  render id
+    let empID = document.createElement("p");  
+    empID.textContent = idNum;
+    cardDiv.appendChild(empID);
+};
 
 
-}
-
-   
-    
-   
+// salary genereator
 
 Employee.prototype.empSalary= function(){
     let basicSalary;
@@ -49,21 +74,21 @@ Employee.prototype.empSalary= function(){
     this.salary=(basicSalary - (basicSalary *0.075));
 }
 
- Employee.prototype.emploeeID  = function() {
-    let idNum;
-    idNum = Math.floor(Math.random() * 10000);
-        
-      return  this.employeeID = idNum;
+// ID number generatore 
+Employee.prototype.emploeeID  = function() {
     
-}
- 
+    let idNum = Math.floor(Math.random() * 10000);
+    
+      return  idNum = this.employeeID ;
 
-Employee.prototype.render= function(){
-    // document.write(`<h4>Employee name: ${this.fullName} Employee_id ${this.employeeID} Employee department: ${this.department} Employee Level:${this.level}</h4>`);
-    // console.log(`<h4></h4>`);
+    
+    
+     
 }
 
-let emp1000=new Employee(0,"Ghazi Samer","Administration","senior","images/noImage.jpg",0);
+
+// Employyes basic data 
+let emp1000=new Employee(1000,"Ghazi Samer","Administration","senior","images/noImage.jpg",0);
 let emp1001=new Employee(1001,"Lana Ali","Finance","senior","images/noImage.jpg",0); 
 let emp1002=new Employee(1002,"Tamara Ayoub","Marketing","senior","images/noImage.jpg",0);
 let emp1003=new Employee(1003,"Safi Walid","Administration","mid-senior","images/noImage.jpg",0);
@@ -73,7 +98,7 @@ let emp1006=new Employee(1006,"Hadi Ahmad","Finance","mid-senior","images/noImag
 
 
 
-
+//EventListener to git the input from the user 
 formEl.addEventListener("submit", handleSubmit );
 
 function handleSubmit(event) {
@@ -96,7 +121,5 @@ function handleSubmit(event) {
     console.log(generatedEmployeeUrl);
     
      generatedEmployee.render();
-//  console.log(generatedEmployee);
-
 }
 
