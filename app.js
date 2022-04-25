@@ -47,9 +47,14 @@ Employee.prototype.render= function(){
 
     //  render id
     let empID = document.createElement("p");  
-    empID.textContent = idNum;
+    empID.textContent = this.employeeID;
     cardDiv.appendChild(empID);
 };
+
+
+
+
+
 
 
 // salary genereator
@@ -100,7 +105,6 @@ let emp1006=new Employee(1006,"Hadi Ahmad","Finance","mid-senior","images/noImag
 
 //EventListener to git the input from the user 
 formEl.addEventListener("submit", handleSubmit );
-
 function handleSubmit(event) {
     event.preventDefault();
     let full_Name = event.target.form_name.value;
@@ -121,5 +125,31 @@ function handleSubmit(event) {
     console.log(generatedEmployeeUrl);
     
      generatedEmployee.render();
+     saveData(employeeInfo);
 }
 
+
+  // Local storage 
+
+  function saveData(data) {
+
+    let stringfiyData = JSON.stringify(data);
+    localStorage.setItem("employees", stringfiyData);
+}
+
+function getData() {
+    let retrievedData = localStorage.getItem("Employee");
+    let arrayData = JSON.parse(retrievedData);
+    // each object doesn't has access to render method
+    if (arrayData != null) {
+        for (let i = 0; i < arrayData.length; i++) {
+            // reinstantiation: re creating instance
+            new Employee(arrayData[i].employeeID, arrayData[i].fullName, arrayData[i].department, arrayData[i].level, arrayData[i].imageURL, arrayData[i].salary);
+            // each obecjt has access to render method and all other Drink methods
+        }
+    }
+
+    renderAll();
+}
+
+getData();
