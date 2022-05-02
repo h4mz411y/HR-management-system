@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>HR-Management System</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <link rel="stylesheet" href="styles.css">
-      <!-- Favicov -->
-      <link rel="icon" type="image/x-icon" href="images/favicon (2).ico">
-      <script type="text/javascript"> </script>
-    </head>
-    <body id = body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR-Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/styles.css" />
+    <!-- Favicov -->
+    <link rel="icon" type="image/x-icon" href="assest/favicon (2).ico">>
+    <script type="text/javascript"> </script>
+  </head>
+  <body  id = body >
+    <header>
+      <!-- NavBAR -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="images/Hrlogo-removebg-preview.png">HR-Management System</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -36,104 +38,78 @@
                 </div>
             </div>
         </nav>
-        <!-- Header-->
-  <header class="bg-dark py-5">
-    <div class="container px-5">
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-                <div class="text-center my-5">
-                    <h1 class="display-5 fw-bolder text-white mb-2">Lorem ipsum dolorvitae velit architecto voluptates quae.
-                    </h1>
-                    <p class="lead text-white-50 mb-4">Lorem, ipsum dolor sit amet consectetur a repudiandae, dicta laborum enim nisi id?</p>
-                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
-                        <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
+
+      <!-- Hero sec -->
+
+
+      <header class="bg-dark py-5">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center my-5">
+                        <h6 class="display-5 fw-bolder text-white mb-2">Here you can add employees.</h6>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
-  <!-- form section -->
-  <section id = fform>
-  <div class="container"> <div class=" text-center mt-5 ">
-      <h1>Add new employee</h1>
-    </div>
-    <div class="row ">
-      <div class="col-lg-7 mx-auto">
-        <div class="card mt-2 mx-auto p-4 bg-light">
-          <div class="card-body bg-light">
-            <div class="container">
-              <form id="contact-form" role="form">
-                <div class="controls">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group"> <label for="form_name">fullName *</label> <input id="form_name"
-                          type="text" name="name" class="form-control" placeholder="Please enter the Full name  *"
-                          required="required" data-error="Full name is required."> </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group"> <label for="form_image">Image_url *</label> <input id="form_image"
-                          type="text" name="surname" class="form-control" placeholder="Please enter the Image url *"
-                          required="required" data-error="Image url is required."> </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group"> <label for="form_need">Department*</label> <select
-                          id="form_need" name="need" class="form-control" required="required"
-                          data-error="Please choose the department.">
-                          <option value="" selected disabled>--Select Your department--</option>
-                          <option>Administration</option>
-                          <option>Marketing</option>
-                          <option>Development</option>
-                          <option>Finance</option>
-                        </select> </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group"> <label for="form_need2">Level *</label> <select
-                          id="form_need2" name="need" class="form-control" required="required"
-                          data-error="Please specify your need.">
-                          <option value="" selected disabled>--Please choose the level--</option>
-                          <option>Juniorr</option>
-                          <option>Mid-Senior</option>
-                          <option>Senior</option>
-                        </select> </div>
-                    </div>
-                  
-                    </div>
-                    <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " 
-                        value="submit" id = btnSub  > </div>
-                  </div>
-                </div>
-              </form>
-            </div>
+    </header>
+      <!-- Form section -->
+      <section class="form-section">
+        <form action="" id="main-form">
+          <input
+            class="form-input"
+            type="text"
+            id="fname"
+            name="fname"
+            value=""
+            placeholder="Full Name"
+          /><br />
+          <input
+            class="form-input"
+            type="text"
+            id="img-url"
+            name="img-url"
+            value=""
+            placeholder="Img-URL //"
+          />
+          <div class="label-select-div">
+            <label for="department">Department</label>
+            <select name="department" id="department">
+              <option value="">Select</option>
+              <option value="Administration">Administration</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Development">Development</option>
+              <option value="Finance">Finance</option>
+            </select>
           </div>
-        </div> <!-- /.8 -->
-      </div> <!-- /.row-->
-    </div>
-  </div>
-  <!-- formSectionEnd -->
-</section>
+          <div class="label-select-div">
+            <label for="level">Level</label>
+            <select name="level" id="level">
+              <option value="">Select</option>
+              <option value="junior">junior</option>
+              <option value="mid-senior">mid-senior</option>
+              <option value="senior">senior</option>
+            </select>
+          </div>
 
-     
-  <!-- Cards Section -->
-  <section id="cards-section" style="width: 18rem; margin: auto; border: 3px solid green; padding: 10px; margin: 80px auto;"></section>
-<!-- cardEnd -->
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
 
-
-
-
-  <footer class="py-5 bg-dark">
-    <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Hamzeh fakhreddin 2022</p></div>
-</footer>
-
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="app.js">js</script>
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-</body>
-
-</html>
+      <!-- Cards Section -->
+      <section id="cards-section"></section>
+    </main>
+  </footer>
   
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="Js/app.js">js</script>
+  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
+  </body>
+</html>
