@@ -1,0 +1,84 @@
+* {
+  font-family: "Akshar", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  font-size: 200%;
+  background-color: #eeeeee;
+}
+.nav-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.footer-1 {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-1 {
+  text-align: center;
+}
+.nav-links {
+  font-size: 0.7rem;
+}
+.form-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: left;
+  font-size: 0.7rem;
+}
+.form-input {
+  width: 100%;
+}
+.label-select-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+.card-div {
+  color: #dddddd;
+  background-color: #06113c;
+  width: 33%;
+  height: 100%;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+#cards-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-img {
+  width: 70%;
+  height: 100%;
+}
+.data-div {
+  font-size: 0.6rem;
+  width: 50%;
+  height: 100%;
+}
+.img-Div {
+  width: 50%;
+}
+.body {
+  font-family: 'Lato', sans-serif
+}
+
+.h1 {
+  margin-bottom: 40px
+}
+
+.label {
+  color: #333
+}
+
+.btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 80%;
+  margin: 50px;
+}
