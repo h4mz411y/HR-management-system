@@ -71,7 +71,7 @@ Employee.prototype.render = function () {
   empLevel.textContent = `Level :${this.level}`;
   dataDiv.appendChild(empLevel);
   //--------------------------
-  let empID = document.createElement("p"); // create level
+  let empID = document.createElement("p"); // create ID
   empID.textContent = `ID :${this.employeeID}`;
   dataDiv.appendChild(empID);
   //---------------------------
